@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>调查问卷页面</title>
+		<style>
+			body{
+				background-color: gray;
+			}
+			.index{
+				margin: auto;
+				width:920px;
+				background-color: white;
+				box-shadow:10px 10px 15px black;
+				margin-top:10px;
+			}
+		    h1{
+				color:orange;
+				padding-top:30px;
+				text-align:center;
+			}
+			form{
+				padding-left: 100px;
+				line-height:180%;
+			}
+			input{
+				border-color: black;
+				border-top-width:0px;
+				border-right-width:0px;
+				border-bottom-width:2px;
+				border-left-width:0px;
+			}
+			#btn{
+				background-color: #FFA500;
+				color:white;
+				padding:5px 10px;
+				margin-left:320px;
+				margin-top:16px;
+				margin-bottom: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="index">
+			<h1>末日生存能力问卷</h1>
+			<hr color="orange" width="700px" />
+			<form method="post" action="URL">
+				<ol>
+					<li>您认为末世中最重要的是？</li>
+					<label><input type="radio" name="education" value="1" required />&nbsp;&nbsp;金钱&nbsp;&nbsp; </label>
+					<label><input type="radio" name="education" value="2" />&nbsp;&nbsp;智慧&nbsp;&nbsp; </label>
+					<label><input type="radio" name="education" value="3" />&nbsp;&nbsp;力量&nbsp;&nbsp; </label>
+					<label><input type="radio" name="education" value="4" />&nbsp;&nbsp;情商&nbsp;&nbsp; </label>
+					<label><input type="radio" name="education" value="5" />&nbsp;&nbsp;善良 </label>
+					<li>您只能留下一件物品，你会选？</li>
+					<label><input type="radio" name="age" value="1" required />&nbsp;&nbsp;枪&nbsp;&nbsp; </label>
+					<label><input type="radio" name="age" value="2" />&nbsp;&nbsp;小麦种子&nbsp;&nbsp; </label>
+					<label><input type="radio" name="age" value="3" />&nbsp;&nbsp;刀&nbsp;&nbsp; </label>
+					<label><input type="radio" name="age" value="4" />&nbsp;&nbsp;50升水&nbsp;&nbsp; </label>
+					<label><input type="radio" name="age" value="5" />&nbsp;&nbsp;指南针</label>
+					<li>遇到危险你会怎么做？</li>
+					<label><input type="radio" name="use" value="1" required />&nbsp;&nbsp;跑&nbsp;&nbsp; </label>
+					<label><input type="radio" name="use" value="2" />&nbsp;&nbsp;战&nbsp;&nbsp; </label>
+					<label><input type="radio" name="use" value="3" />&nbsp;&nbsp;随机应变&nbsp;&nbsp; </label>
+				</ol>
+				您的姓名&nbsp;&nbsp;<input type="text" name="username" required />
+				<br />
+				<a href="A1ans.html">提交</a>
+				
+			</form>
+		</div>
+	</body>
+</html>
+
