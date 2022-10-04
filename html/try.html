@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		
+		<audio id="music1" controls="controls" autoplay="autoplay" preload id="music1" hidden>
+			<source src="js/music/yijiyali.mp3" />
+		</audio>
+		
+		<button type="button" onclick="play()">播放</button>
+	
+		<script type="text/javascript">
+			var audio = document.getElementById('music1');
+			function play(){
+				console.log('aaaaaa')
+				
+				audio.play();
+			}
+		</script>
+	</body>
+</html>

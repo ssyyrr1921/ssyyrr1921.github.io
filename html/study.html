@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+  
+  
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+    <meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<title></title>
+    <style type="text/css">
+       p {border-style: solid solid solid none;}
+    </style>
+    <script type="text/javascript">
+        function popDiv(){
+            // 获取div元素
+            var popBox = document.getElementById("popDiv");
+            // var popLayer = document.getElementById("popLayer");
+
+            // 控制两个div的显示与隐藏
+            popBox.style.display = "block";
+            // popLayer.style.display = "block";
+        }
+        function open(){
+            // 获取div元素
+            var popBx = document.getElementById("zz");
+            // var popLayer = document.getElementById("popLayer");
+
+            // 控制两个div的显示与隐藏
+            // popBx.style.display = "block";
+            
+        }
+        function closePop(){
+            // 获取弹出窗口元素
+            let popDiv = document.getElementById("popDiv");
+
+            popDiv.style.display = "none";
+        }
+        function close(){
+            // 获取弹出窗口元素
+            let popDiv = document.getElementById("zz");
+
+            popDiv.style.display = "none";
+        }
+       
+    </script>
+    <style type="text/css">
+        body{
+            background-color: rgb(233, 233, 233);
+        }
+        #popDiv{
+            display: none;
+            background-color: rgb(147, 137, 139);
+            z-index: 11;
+            width: 600px;
+            height: 600px;
+            position:fixed;
+            top:0;
+            right:0;
+            left:0;
+            bottom:0;
+            margin:auto;
+        }
+        /* 关闭按钮样式 */
+        #popDiv .close a {
+            text-decoration: none;
+            color: #2D2C3B;
+        }
+        /* 弹出界面的关闭按钮 */
+        #popDiv .close{
+            text-align: right;
+            margin-right: 5px;
+            background-color: #F8F8F8;
+        }
+        #popDiv p{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+    <style type="text/css">
+        .myinput1
+        {
+            border:1px solid #ffffff;
+            border-radius:2px;
+            background-color:#000000d9;
+            font-size:25px;	
+            color: #ffffff;
+        }
+        .myinput2
+        {
+            border:1px solid hsl(120, 100%, 50%);
+            border-radius:2px;
+            background-color:#3bc4ffe3;
+            font-size:20px;	
+            color: #ffffff;
+        }
+        .btn {    
+            font-size:25px;
+            margin: 8px auto;    
+            flex-shrink: 0;    
+            width: 160px;    
+            height: 64px;
+        }
+        .circle {    
+               border-radius: 64px;    
+             background: #7de3c8;
+             }
+    </style>
+    <style type="text/css">
+        body{
+            background-color: rgb(233, 233, 233);
+        }
+        #zz{
+            display: none;
+            background-color: rgb(147, 137, 139);
+            z-index: 11;
+            width: 600px;
+            height: 600px;
+            position:fixed;
+            top:0;
+            right:0;
+            left:0;
+            bottom:0;
+            margin:auto;
+        }
+        /* 关闭按钮样式 */
+        #zz .close a {
+            text-decoration: none;
+            color: #2D2C3B;
+        }
+        /* 弹出界面的关闭按钮 */
+        #zz .close{
+            text-align: right;
+            margin-right: 5px;
+            background-color: #F8F8F8;
+        }
+        #zz p{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id="popDiv">
+        <div class="close">
+            <a href="javascript:void(0)" onclick="closePop()">关闭</a>
+        </div>
+            <p>法庭记录</p>
+            <p1>点击查看详细</p1>
+            <br>
+            <script>
+                function cout(sr){
+                    alert(sr);
+                }
+                function opened(){
+                    var di =document.getElementById('photo');
+                    di.style.display = "block";
+                }
+                function ba(){
+                    var di =document.getElementById('photo');
+                    di.style.display = "none";
+                }
+            </script>
+            <input type=button value='律师徽章' onclick="cout('律师身份的证明');">
+            <input type=button value='尸检报告' onclick="cout('死者德川，死亡时间2016年11月26日11点至13点');">
+            <input type=button value='停电记录' onclick="cout('2016年11月26日11点至14点建州游泳馆停电');">
+            <input type=button value='现场平面图' onclick="opened()">
+            <div id = "photo" style="display: none;background-color: aqua;">
+                <img  id="php" src="js/img/现场图片.png" width="250" height="360"/>
+                <br>
+                <input type=button value='返回' onclick="ba()">
+            </div>
+    </div>
+    <audio id="music1" controls="controls" autoplay="autoplay" preload id="music1" loop = 30 hidden>
+        <source src="js/music/yijiyali.mp3" />
+   
+    </audio>
+    <audio id="kai" controls="controls" autoplay="autoplay" preload id="kai" loop = 30 hidden>
+        <source src="js/music/kaiting.mp3" />
+   
+    </audio>
+    <audio id="xun" controls="controls" autoplay="autoplay" preload id="xun" loop = 30 hidden>
+        <source src="js/music/岩垂徳行 - 尋問 ～アレグロ 2013 (寻问 ～最速 2013).mp3" />
+   
+    </audio>
+    <audio id="zq" controls="controls" autoplay="autoplay" preload id="zq" loop = 30 hidden>
+        <source src="js/music/日本群星 (オムニバス) - 追求 とっつかまえて.mp3" />
+   
+    </audio>
+    <img  id="img" src="js/img/kiyun.png" width="250" height="360"/>
+    <script src="js/first.js"></script>
+    <input class="myinput2" type="text"  id = "blood"  size="5" maxlength="30" value=5 disabled>
+    <br>
+    <input class="myinput2" type="text"  id = "name"  size="4" maxlength="30" value="" disabled>
+    <br>
+    <!-- <input class="myinput1" type="text"  id = "AA1"  size="100" maxlength="30" value="第4人民法院 第2候审室" disabled> -->
+    <textarea class = "myinput1" id = "AA1" rows="3" cols="50"   disabled>第4人民法院 第2候审室</textarea>
+    <br>
+   
+  
+
+    
+    <input class = "btn circle" type=button value='继续' onclick="sp();">
+    <input class = "btn circle" type=button value='指证' onclick="zz();">
+    <input class = "btn circle" type=button value='威慑' onclick="mada()">
+    <div id = "zz" style="display: none;background-color: aqua;">
+        <input type=button value='律师徽章' onclick="yiyi(1)">
+        <input type=button value='尸检报告' onclick="yiyi(2)">
+        <input type=button value='停电记录' onclick="yiyi(3)">
+        <input type=button value='现场平面图' onclick="yiyi(4)">
+        <br>
+        <input type=button value='返回' onclick="back()">
+    </div>
+    <div id="popLayer">
+        <button  class = "btn circle" onclick="popDiv();">法庭记录</button>
+    </div>
+    
+</body>
+</html>
